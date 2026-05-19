@@ -22,6 +22,7 @@
   margin-bottom: 10px;
 }
 
+/* ONLY welcome text */
 .dashboard-card > p {
   color: #1e3799;
   font-size: 18px;
@@ -41,17 +42,16 @@
   padding: 25px;
   border-radius: 18px;
   transition: 0.3s;
-  color: darkred;
 }
 
 .stat-box h3 {
-  color: darkred !important;
+  color: darkred;
   margin-bottom: 10px;
   font-size: 22px;
 }
 
 .stat-box p {
-  color: darkred !important;
+  color: darkred;
   font-size: 24px;
   font-weight: bold;
 }
