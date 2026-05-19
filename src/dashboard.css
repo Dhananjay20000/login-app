@@ -41,20 +41,17 @@
   padding: 25px;
   border-radius: 18px;
   transition: 0.3s;
-}
-
-.stat-box:hover {
-  transform: translateY(-5px);
+  color: darkred;
 }
 
 .stat-box h3 {
-  color: #8B0000;
+  color: darkred !important;
   margin-bottom: 10px;
   font-size: 22px;
 }
 
 .stat-box p {
-  color: #B22222;
+  color: darkred !important;
   font-size: 24px;
   font-weight: bold;
 }
