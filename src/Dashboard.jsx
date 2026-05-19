@@ -1,36 +1,43 @@
 import React from "react";
-import "./dashboard.css";
+import "./Dashboard.css";
 
-function Dashboard({ username }) {
+function Dashboard({ username, setUser }) {
   return (
-    <div className="dashboard">
-      <div className="card">
-        <h1>👋 Hello {username}</h1>
-        <p>Welcome back! You have successfully logged in.</p>
+    <div className="dashboard-container">
+      <div className="dashboard-card">
 
-        <div className="stats">
-          <div className="box">
+        <h1>👋 Hello {username}</h1>
+
+        <p>
+          Welcome back! You have successfully logged in.
+        </p>
+
+        <div className="stats-container">
+
+          <div className="stat-box">
             <h3>📦 Items</h3>
             <p>12</p>
           </div>
 
-          <div className="box">
+          <div className="stat-box">
             <h3>💰 Revenue</h3>
             <p>₹45,000</p>
           </div>
 
-          <div className="box">
+          <div className="stat-box">
             <h3>⚡ Status</h3>
             <p>Active</p>
           </div>
+
         </div>
 
         <button
-          onClick={() => window.location.reload()}
-          className="logout"
+          className="logout-btn"
+          onClick={() => setUser(null)}
         >
           Logout
         </button>
+
       </div>
     </div>
   );
