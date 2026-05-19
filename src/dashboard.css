@@ -22,7 +22,7 @@
   margin-bottom: 10px;
 }
 
-.dashboard-card p {
+.dashboard-card > p {
   color: #1e3799;
   font-size: 18px;
   margin-bottom: 30px;
